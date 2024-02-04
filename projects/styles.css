@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('frontBeech.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: 'Roobert', sans-serif;
+    position: relative;
+    text-align: left; /* Align all text to the left */
+  }
+  
+  #topBar {
+    background-color: rgba(1, 33, 71, 0.3);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    transition: background-color 0.4s;
+    z-index: 1;
+  }
+  
+  #topBar:hover {
+    background-color: rgba(1, 33, 71, 1);
+  }
+  
+  #branding,
+  #navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #branding img {
+    height: 60px;
+    margin-right: 10px;
+    filter: drop-shadow(3px 3px 5px #000000);
+  }
+  
+  #navigation a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #F86628, -1px -1px 0 #F86628, 1px -1px 0 #F86628, -1px 1px 0 #F86628;
+  }
+  
+  #backgroundOverlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px; /* Adjusted height */
+    background-color: #333333;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  #skywardImage,
+  #cleverImage,
+  #stanDunlapImage {
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  #leftContent {
+    position: absolute;
+    left: 500px; /* Adjusted left position */
+    color: #fff;
+  }
+  
+  .link-group {
+    margin-bottom: 20px;
+  }
+  
+  .link-group a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .link-group a:hover {
+    text-decoration: underline;
+    color: #F86628; /* Change text color on hover */
+  }
+  
+  .divider {
+    border-top: 1px solid #fff; /* White line between links */
+  }
+  
+  .legal {
+    position: absolute;
+    left: 750px; 
+    color: #fff;
+  
+  }
+  
