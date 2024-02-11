@@ -1,0 +1,70 @@
+
+.top-bar {
+  background-color: rgba(1, 33, 71, 0.3);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  transition: background-color 0.4s;
+  z-index: 1;
+}
+
+.top-bar:hover {
+  background-color: rgba(1, 33, 71, 1); 
+}
+
+.branding,
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding img {
+  height: 60px;
+  margin-right: 10px;
+  filter: drop-shadow(3px 3px 5px #000000);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #F86628, -1px -1px 0 #F86628, 1px -1px 0 #F86628, -1px 1px 0 #F86628;
+}
+
+/* -- end of code for top blue bar--  */
+
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #262626;
+    margin: 0rem;
+    overflow: hidden;
+  }
+  
+  #image-track {
+    display: flex;
+    gap: 1vmin;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    top: 5%;
+    user-select: none; /* -- Prevent image highlighting -- */
+  }
+  
+  #image-track > .image {
+    width: 80vmin;
+    height: 28vmin;
+    object-fit: cover;
+    object-position: 50% 100%;
+  }
+  
