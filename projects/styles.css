@@ -1,105 +1,184 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('frontBeech.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    font-family: 'Roobert', sans-serif;
-    position: relative;
-    text-align: left; /* Align all text to the left */
-  }
-  
-  #topBar {
-    background-color: rgba(1, 33, 71, 0.3);
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    transition: background-color 0.4s;
-    z-index: 1;
-  }
-  
-  #topBar:hover {
-    background-color: rgba(1, 33, 71, 1);
-  }
-  
-  #branding,
-  #navigation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #branding img {
-    height: 60px;
-    margin-right: 10px;
-    filter: drop-shadow(3px 3px 5px #000000);
-  }
-  
-  #navigation a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 15px;
-    font-weight: bold;
-    text-shadow: 1px 1px 0 #F86628, -1px -1px 0 #F86628, 1px -1px 0 #F86628, -1px 1px 0 #F86628;
-  }
-  
-  #backgroundOverlay {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 250px; /* Adjusted height */
-    background-color: #333333;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
-  
-  #skywardImage,
-  #cleverImage,
-  #stanDunlapImage {
-    height: 100px;
-    margin-right: 20px;
-  }
-  
-  #leftContent {
-    position: absolute;
-    left: 500px; /* Adjusted left position */
-    color: #fff;
-  }
-  
-  .link-group {
-    margin-bottom: 20px;
-  }
-  
-  .link-group a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .link-group a:hover {
-    text-decoration: underline;
-    color: #F86628; /* Change text color on hover */
-  }
-  
-  .divider {
-    border-top: 1px solid #fff; /* White line between links */
-  }
-  
-  .legal {
-    position: absolute;
-    left: 750px; 
-    color: #fff;
-  
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-image: url('frontBeech.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: 'Roobert', sans-serif;
+  position: relative;
+}
+
+.top-bar {
+  background-color: rgba(1, 33, 71, 0.3);
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  transition: background-color 0.4s;
+  z-index: 1;
+}
+
+.top-bar:hover {
+  background-color: rgba(1, 33, 71, 1); 
+}
+
+.branding,
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding img {
+  height: 60px;
+  margin-right: 10px;
+  filter: drop-shadow(3px 3px 5px #000000);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #F86628, -1px -1px 0 #F86628, 1px -1px 0 #F86628, -1px 1px 0 #F86628;
+}
+
+.background-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px; /*  height of  gray part */
+  background-color: #333333;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.external-link-image {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.left-content {
+  position: absolute;
+  left: 550px; /* moves it to the Right */
+  color: #fff;
+}
+
+.link-group {
+  margin-bottom: 10px;
+}
+
+.link-group a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link-group a:hover {
+  text-decoration: underline;
+  color: #F86628; /* Change text color then mouse is over it  */
+}
+
+.divider {
+  border-top: 1px solid #fff; /* White line between links */
+}
+
+.legal {
+  position: absolute;
+  left: 800px; /* moves it to the Right */
+  color: #fff;
+}
+
+.student-handbook {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 60px;
+}
+
+.student-handbook-link {
+  color: #F86628;
+}
+
+.student-handbook-link:hover {
+  color: #012147;
+}
+
+.faqs-ipads-responsible-use-agreement {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 80px;
+}
+
+.faqs-ipads-responsible-use-agreement-link {
+  color: #F86628;
+}
+
+.faqs-ipads-responsible-use-agreement-link:hover {
+  color: #012147;
+}
+
+.replacement-ipad-charger {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 100px;
+}
+
+.replacement-ipad-charger-link {
+  color: #F86628;
+}
+
+.replacement-ipad-charger-link:hover {
+  color: #012147;
+}
+
+.replacement-charger-online {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 120px;
+}
+
+.replacement-charger-online-link {
+  color: #F86628;
+}
+
+.replacement-charger-online-link:hover {
+  color: #012147;
+}
+
+.school-store {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 140px;
+}
+
+.school-store-link {
+  color: #F86628;
+}
+
+.school-store-link:hover {
+  color: #012147;
+}
+
+.tickets-to-school-events {
+  position: absolute;
+  left: 1200px; /* moves it to the Right  */
+  top: 160px;
+}
+
+.tickets-to-school-events-link {
+  color: #F86628;
+}
+
+.tickets-to-school-events-link:hover {
+  color: #012147;
+}
