@@ -1,0 +1,188 @@
+body {
+    background-color: #202020;
+    margin: 0rem;
+    height: auto;
+    width: auto;
+    overflow: scroll;
+    padding: 0;
+    font-family: 'Roobert', sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: -3px;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.content {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Add margin at the bottom to separate groups of cards */
+}
+
+.card {
+    flex: 1;
+    height: 200px; /* Adjust height as needed */
+    background-color: #111;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in box size */
+    text-align: center; /* Center align text */
+    border: 1px solid #333333; /* Add 1px solid border with color #ccc */
+    position: relative;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.double-card {
+    display: flex;
+    flex: 2; /* Make the double-card container twice the width of a single card */
+}
+
+.double-card .card {
+    flex: 1;
+    height: 200px; /* Adjust height as needed */
+    background-color: #111;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in box size */
+    text-align: center; /* Center align text */
+    border: 1px solid #333333; /* Add 1px solid border with color #ccc */
+    position: relative;
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.double-card .card:first-child {
+    flex-basis: calc(39% - 2.67px); /* Set the width to be the size of 2 on the top row */
+}
+
+.card + .card {
+    margin-left: 5px; /* Adding a 5px gap between cards */
+}
+
+.card:hover {
+    background-color: #181818; /* Adjust the background color on hover */
+}
+
+.card p {
+    color: #333; /* Text color */
+}
+
+.Student_Handbook, .iPad_info, .school_store, .extra-resources {
+    color: #ffffff; /* Bold text color */
+}
+
+.content .card p a {
+    color: #F86628;
+    text-decoration: none; /* Remove default underline */
+    font-size: 0.75em;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and text-decoration */
+}
+
+.content .card p a:hover {
+    color: hsl(18, 97%, 71%); /* Darker color on hover */
+    text-decoration: underline; /* Add underline on hover */
+    font-size: 1em; /* Increase font size slightly on hover */
+}
+
+.logo {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 200px; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 80px); /* Adjust height as needed */
+    padding-top: 3px; /* Adjust top padding to move images up */
+    padding-left: 3px; /* Adjust left padding to move images left */
+    padding-right: 3px; /* Adjust right padding to move images right */
+    padding-bottom: 10px; /* Adjust bottom padding to move images down */
+}
+
+.image-container a {
+    flex: 0 1 30%; /* Adjust width as needed */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .5s ease; /* Add transition for smooth animation */
+}
+
+.image-container a:hover {
+    transform: scale(1.2); /* Increase scale on hover */
+}
+
+.card .extra-resources {
+    color: #ffffff; /* Bold text color */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.custom-shape-divider-top-1709496790 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709496790 svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 104px;
+}
+
+.custom-shape-divider-top-1709496790 .shape-fill {
+    fill: #F86628;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    height: 100%;;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+    .layer1 {
+        background-image: url(layer1.svg);
+
+}
+
+.card:after {
+    background: linear-gradient(
+    transparent,
+    #0252b4,
+    transparent
+    );
+    height: 70px;
+    width: 2.5px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    content: "";
+    transition: top 600ms ease,
+        opacity 600ms ease;
+}
+
+.card:after {
+    top: 65%;
+    opacity: 0;
+    
+}
+
+.card:hover:after {
+    top: 25%;
+    opacity: 1;
+}
+
